@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:util="http://www.springframework.org/schema/util" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd"> <!-- bean definitions here -->
+<!--  setter injection-->
+<bean id="st" class="com.spring2priject.Stydent">
+<property name="roll"> <value>101</value></property>
+<property name="name"> <value>deep</value></property>
+<property name="gpa"> <value>8.1</value></property>
+</bean>
+<bean id="st2" class="com.spring2priject.Stydent">
+<property name="roll"> <value>102</value></property>
+<property name="name"> <value>alia</value></property>
+<property name="gpa"> <value>8.0</value></property>
+</bean>
+<!-- constructor injection -->
+<bean id="st" class="com.spring2priject.Stydent">
+<constructor-arg value="101"/>
+<constructor-arg value="deep"/>
+<constructor-arg value="8.0"/>
+</bean>
+<bean id="st2" class="com.spring2priject.Stydent">
+<constructor-arg value="102"/>
+<constructor-arg value="alia"/>
+<constructor-arg value="8.1"/>
+</bean>
+</beans>

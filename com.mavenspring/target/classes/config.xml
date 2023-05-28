@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:util="http://www.springframework.org/schema/util" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd"> <!-- bean definitions here -->
+    
+    <bean id="tr" class="learning.com.mavenspring.Trainer">
+    <property name="Subjects">
+    <list>
+    <value>java</value>
+     <value>sql</value>
+    </list>
+    </property>
+    <property name="Students">
+   <set>
+   <value>mahesh</value>
+    <value>suresh</value>
+   </set>
+   </property>
+   <property name="batches">
+   <map>
+   
+   <entry key="101" value="sep"></entry>
+   <entry key="102" value="dec"></entry>
+   
+   </map>
+   </property>
+    </bean>
+    </beans>
+        
